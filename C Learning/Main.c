@@ -2,6 +2,8 @@
 
 /*C problems*/
 
+// --------------- Find largest element in array ------------------
+
 void findLargestElementInArr(int arr[])
 {
     int i;
@@ -23,8 +25,42 @@ void findLargestElementInArr(int arr[])
     printf("%d", max);
 }
 
+// --------------- Bubble Sort Algorithm ---------------------
+
+// function to swap elements
+// for the bubble sort algorithm
+void swapElements(int arr[], int index1, int index2)
+{
+    int temp = arr[index1];
+    arr[index1] = arr[index2];
+    arr[index2] = temp;
+}
+
+void bubbleSort(int arr[])
+{
+
+    int i;
+    for (int i = 0; i < 4 - 1; i++)
+    {
+        if (arr[i] > arr[i + 1])
+        {
+            swapElements(arr, i, i + 1);
+        }
+    }
+
+    // printing the sorted list
+    for (int i = 0; i < 4; i++)
+    {
+        printf("%d", arr[i]);
+    }
+}
+
+// --------------- Selection Sort Algorithm ----------------------
+
+// --------------- Main Function ----------------------
+
 void main()
 {
-    int myNumbers[] = {15, 25, 55, 66};
-    findLargestElementInArr(myNumbers);
+    int myNumbers[] = {25, 36, 2001, 91};
+    bubbleSort(myNumbers);
 }
