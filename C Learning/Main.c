@@ -84,10 +84,27 @@ void selectionSort(int arr[])
     }
 }
 
+// ------------ Other problems --------------
+void printUpToN()
+{
+    int n, i;
+
+    printf("Type a number: \n");
+    scanf("%d", &n);
+
+    while (i < n)
+    {
+        i++;
+        if (i % 2 != 0)
+        {
+            printf("%d\n", i);
+        }
+    }
+}
+
 // --------------- Main Function ----------------------
 
 void main()
 {
-    int myNumbers[] = {12, 9, 8, 7};
-    selectionSort(myNumbers);
+    printUpToN();
 }
