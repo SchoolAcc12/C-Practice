@@ -56,11 +56,38 @@ void bubbleSort(int arr[])
 }
 
 // --------------- Selection Sort Algorithm ----------------------
+void selectionSort(int arr[])
+{
+    int i, j;
+
+    for (int i = 0; i < 4 - 1; i++)
+    {
+        int minimum = i;
+        for (int j = i + 1; j < 4; j++)
+        {
+            if (arr[j] < arr[minimum])
+            {
+                minimum = j;
+            }
+        }
+
+        if (arr[minimum] != i)
+        {
+            swapElements(arr, minimum, i);
+        }
+    }
+
+    // printing the sorted list
+    for (int i = 0; i < 4; i++)
+    {
+        printf("%d", arr[i]);
+    }
+}
 
 // --------------- Main Function ----------------------
 
 void main()
 {
-    int myNumbers[] = {25, 36, 2001, 91};
-    bubbleSort(myNumbers);
+    int myNumbers[] = {12, 9, 8, 7};
+    selectionSort(myNumbers);
 }
