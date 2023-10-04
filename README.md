@@ -10,4 +10,5 @@
 <h3>C Learning</h3>
 <p>This folder contains problems I have solved such as sorting algorithms and problems from various websites</p>
 <h3>A_Star</h3>
+<p>The A star folder includes the a star pathfinding algorithm implemented in C.</p>
 <hr>
