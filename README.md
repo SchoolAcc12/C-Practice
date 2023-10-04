@@ -9,4 +9,5 @@
 
 <h3>C Learning</h3>
 <p>This folder contains problems I have solved such as sorting algorithms and problems from various websites</p>
+<h3>A_Star</h3>
 <hr>
