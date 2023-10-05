@@ -102,9 +102,32 @@ void printUpToN()
     }
 }
 
+void decimalToBinary(int n)
+{
+    int remainder;
+    int firstRemainder = n % 2;
+    printf("%d\n", firstRemainder);
+
+    while (n != 0)
+    {
+        n = n / 2;
+
+        if (n != 0)
+        {
+            remainder = n % 2;
+            printf("%d\n", remainder);
+        }
+
+        if (n == 0)
+        {
+            break;
+        }
+    }
+}
+
 // --------------- Main Function ----------------------
 
 void main()
 {
-    printUpToN();
+    decimalToBinary(20);
 }
